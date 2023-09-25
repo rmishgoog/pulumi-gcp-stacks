@@ -1,0 +1,31 @@
+apiVersion: pulumi.com/v1
+kind: Stack
+metadata:
+  name: proofing-stack
+  namespace: pulumi-system
+spec:
+  stack: rmishgoog/gcp-kubernetes-standard/proofing
+  branch: main
+  destroyOnFinalize: false
+  commit: 5f949f4d7a9058a965c0d49c9865997df18a1e46
+  envRefs:
+    GOOGLE_CREDENTIALS:
+      type: Secret
+      secret:
+        key: GOOGLE_APPLICATION_CREDENTIALS
+        name: google-cloud-access-token
+        namespace: pulumi-system
+    PULUMI_ACCESS_TOKEN:
+      type: Secret
+      secret:
+        key: pulumi-token
+        name: pulumi-token
+        namespace: pulumi-system
+  projectRepo: https://github.com/rmishgoog/pulumi-cloud-kubernetes
+  gitAuth:
+    accessToken:
+      type: Secret
+      secret:
+        key: git-token
+        name: git-token
+        namespace: pulumi-system

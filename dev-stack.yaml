@@ -7,7 +7,7 @@ spec:
   stack: rmishgoog/gcp-kubernetes-standard/dev
   branch: main
   destroyOnFinalize: false
-  commit: b07ea3f22bb678c7edd087bb6cc94d2f03f23a0c
+  commit: 09eba027538b1a3c05ddb3b7732b3f98c48c338e
   envRefs:
     GOOGLE_CREDENTIALS:
       type: Secret

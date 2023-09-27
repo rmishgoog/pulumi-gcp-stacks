@@ -7,6 +7,7 @@ spec:
   stack: rmishgoog/gcp-kubernetes-standard/proofing
   branch: main
   destroyOnFinalize: false
+  continueResyncOnCommitMatch: true
   commit: 09eba027538b1a3c05ddb3b7732b3f98c48c338e
   envRefs:
     GOOGLE_CREDENTIALS:

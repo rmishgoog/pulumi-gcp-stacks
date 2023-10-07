@@ -9,7 +9,7 @@ spec:
   destroyOnFinalize: false
   continueResyncOnCommitMatch: true
   refresh: true
-  commit: 09eba027538b1a3c05ddb3b7732b3f98c48c338e
+  commit: c4404bf24b02c7d572af8c5da3790aad41236222
   envRefs:
     GOOGLE_CREDENTIALS:
       type: Secret
